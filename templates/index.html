@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespearean Image Description</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        #drop-area {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        #drop-area.hover {
+            border-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="drop-area">
+        <h3>Drag and drop an image</h3>
+        <input type="file" id="fileElem" accept="image/*" onchange="handleFiles(this.files)">
+        <label class="button" for="fileElem">Select a file</label>
+        <div id="preview"></div>
+        <p id="response"></p>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>
