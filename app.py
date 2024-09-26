@@ -2,7 +2,6 @@ import os
 import openai
 from flask import Flask, request, render_template, jsonify
 from werkzeug.utils import secure_filename
-from PIL import Image
 from dotenv import load_dotenv
 import base64
 
